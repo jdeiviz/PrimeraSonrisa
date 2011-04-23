@@ -1,0 +1,110 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Super category</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Enabled</th>
+    <th>Visible</th>
+    <th>Enhanced</th>
+    <th>New from</th>
+    <th>New to</th>
+    <th>Friendly url</th>
+    <th>Css class</th>
+    <th>Title</th>
+    <th>Home order</th>
+    <th>Home title</th>
+    <th>Home text</th>
+    <th>Home link</th>
+    <th>Home image src</th>
+    <th>List order</th>
+    <th>List title</th>
+    <th>List text</th>
+    <th>List link</th>
+    <th>List image src</th>
+    <th>Category order</th>
+    <th>Category title</th>
+    <th>Category text</th>
+    <th>Category link</th>
+    <th>Category image src</th>
+    <th>Enhanced order</th>
+    <th>Enhanced title</th>
+    <th>Enhanced text</th>
+    <th>Enhanced link</th>
+    <th>Enhanced image src</th>
+    <th>Recommended title</th>
+    <th>Recommended text</th>
+    <th>Recommended link</th>
+    <th>Recommended image src</th>
+    <th>Detail title</th>
+    <th>Detail text</th>
+    <th>Detail link</th>
+    <th>Secondary detail title</th>
+    <th>Secondary detail text</th>
+    <th>Secondary detail link</th>
+    <th>Detail image src</th>
+    <th>Meta title</th>
+    <th>Meta description</th>
+    <th>Meta keywords</th>
+    <th>Other metas</th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%=h category.super_category_id %></td>
+    <td><%=h category.code %></td>
+    <td><%=h category.name %></td>
+    <td><%=h category.enabled %></td>
+    <td><%=h category.visible %></td>
+    <td><%=h category.enhanced %></td>
+    <td><%=h category.new_from %></td>
+    <td><%=h category.new_to %></td>
+    <td><%=h category.friendly_url %></td>
+    <td><%=h category.css_class %></td>
+    <td><%=h category.title %></td>
+    <td><%=h category.home_order %></td>
+    <td><%=h category.home_title %></td>
+    <td><%=h category.home_text %></td>
+    <td><%=h category.home_link %></td>
+    <td><%=h category.home_image_src %></td>
+    <td><%=h category.list_order %></td>
+    <td><%=h category.list_title %></td>
+    <td><%=h category.list_text %></td>
+    <td><%=h category.list_link %></td>
+    <td><%=h category.list_image_src %></td>
+    <td><%=h category.category_order %></td>
+    <td><%=h category.category_title %></td>
+    <td><%=h category.category_text %></td>
+    <td><%=h category.category_link %></td>
+    <td><%=h category.category_image_src %></td>
+    <td><%=h category.enhanced_order %></td>
+    <td><%=h category.enhanced_title %></td>
+    <td><%=h category.enhanced_text %></td>
+    <td><%=h category.enhanced_link %></td>
+    <td><%=h category.enhanced_image_src %></td>
+    <td><%=h category.recommended_title %></td>
+    <td><%=h category.recommended_text %></td>
+    <td><%=h category.recommended_link %></td>
+    <td><%=h category.recommended_image_src %></td>
+    <td><%=h category.detail_title %></td>
+    <td><%=h category.detail_text %></td>
+    <td><%=h category.detail_link %></td>
+    <td><%=h category.secondary_detail_title %></td>
+    <td><%=h category.secondary_detail_text %></td>
+    <td><%=h category.secondary_detail_link %></td>
+    <td><%=h category.detail_image_src %></td>
+    <td><%=h category.meta_title %></td>
+    <td><%=h category.meta_description %></td>
+    <td><%=h category.meta_keywords %></td>
+    <td><%=h category.other_metas %></td>
+    <td><%= link_to 'Show', category %></td>
+    <td><%= link_to 'Edit', edit_category_path(category) %></td>
+    <td><%= link_to 'Destroy', category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New category', new_category_path %>

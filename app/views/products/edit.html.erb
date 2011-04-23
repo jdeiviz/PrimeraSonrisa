@@ -1,0 +1,308 @@
+<h1>Editing product</h1>
+
+<% form_for(@product) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.text_field :category_id %>
+  </p>
+  <p>
+    <%= f.label :product_type %><br />
+    <%= f.text_field :product_type %>
+  </p>
+  <p>
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :enabled %><br />
+    <%= f.check_box :enabled %>
+  </p>
+  <p>
+    <%= f.label :visible %><br />
+    <%= f.check_box :visible %>
+  </p>
+  <p>
+    <%= f.label :saleable %><br />
+    <%= f.check_box :saleable %>
+  </p>
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </p>
+  <p>
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :special_price %><br />
+    <%= f.text_field :special_price %>
+  </p>
+  <p>
+    <%= f.label :special_price_from %><br />
+    <%= f.date_select :special_price_from %>
+  </p>
+  <p>
+    <%= f.label :special_price_to %><br />
+    <%= f.date_select :special_price_to %>
+  </p>
+  <p>
+    <%= f.label :iva %><br />
+    <%= f.text_field :iva %>
+  </p>
+  <p>
+    <%= f.label :width %><br />
+    <%= f.text_field :width %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :deep %><br />
+    <%= f.text_field :deep %>
+  </p>
+  <p>
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </p>
+  <p>
+    <%= f.label :enhanced %><br />
+    <%= f.check_box :enhanced %>
+  </p>
+  <p>
+    <%= f.label :new_from %><br />
+    <%= f.date_select :new_from %>
+  </p>
+  <p>
+    <%= f.label :new_to %><br />
+    <%= f.date_select :new_to %>
+  </p>
+  <p>
+    <%= f.label :warehouse_location %><br />
+    <%= f.text_field :warehouse_location %>
+  </p>
+  <p>
+    <%= f.label :manage_stock %><br />
+    <%= f.check_box :manage_stock %>
+  </p>
+  <p>
+    <%= f.label :stock_quantity %><br />
+    <%= f.text_field :stock_quantity %>
+  </p>
+  <p>
+    <%= f.label :stock_availability %><br />
+    <%= f.check_box :stock_availability %>
+  </p>
+  <p>
+    <%= f.label :shipping_cost %><br />
+    <%= f.text_field :shipping_cost %>
+  </p>
+  <p>
+    <%= f.label :friendly_url %><br />
+    <%= f.text_field :friendly_url %>
+  </p>
+  <p>
+    <%= f.label :css_class %><br />
+    <%= f.text_field :css_class %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :home_order %><br />
+    <%= f.text_field :home_order %>
+  </p>
+  <p>
+    <%= f.label :home_title %><br />
+    <%= f.text_field :home_title %>
+  </p>
+  <p>
+    <%= f.label :home_text %><br />
+    <%= f.text_field :home_text %>
+  </p>
+  <p>
+    <%= f.label :home_link %><br />
+    <%= f.text_field :home_link %>
+  </p>
+  <p>
+    <%= f.label :home_image_src %><br />
+    <%= f.text_field :home_image_src %>
+  </p>
+  <p>
+    <%= f.label :list_order %><br />
+    <%= f.text_field :list_order %>
+  </p>
+  <p>
+    <%= f.label :list_title %><br />
+    <%= f.text_field :list_title %>
+  </p>
+  <p>
+    <%= f.label :list_text %><br />
+    <%= f.text_field :list_text %>
+  </p>
+  <p>
+    <%= f.label :list_link %><br />
+    <%= f.text_field :list_link %>
+  </p>
+  <p>
+    <%= f.label :list_image_src %><br />
+    <%= f.text_field :list_image_src %>
+  </p>
+  <p>
+    <%= f.label :category_order %><br />
+    <%= f.text_field :category_order %>
+  </p>
+  <p>
+    <%= f.label :category_title %><br />
+    <%= f.text_field :category_title %>
+  </p>
+  <p>
+    <%= f.label :category_text %><br />
+    <%= f.text_field :category_text %>
+  </p>
+  <p>
+    <%= f.label :category_link %><br />
+    <%= f.text_field :category_link %>
+  </p>
+  <p>
+    <%= f.label :category_image_src %><br />
+    <%= f.text_field :category_image_src %>
+  </p>
+  <p>
+    <%= f.label :cart_title %><br />
+    <%= f.text_field :cart_title %>
+  </p>
+  <p>
+    <%= f.label :cart_text %><br />
+    <%= f.text_field :cart_text %>
+  </p>
+  <p>
+    <%= f.label :cart_link %><br />
+    <%= f.text_field :cart_link %>
+  </p>
+  <p>
+    <%= f.label :cart_image_src %><br />
+    <%= f.text_field :cart_image_src %>
+  </p>
+  <p>
+    <%= f.label :enhanced_order %><br />
+    <%= f.text_field :enhanced_order %>
+  </p>
+  <p>
+    <%= f.label :enhanced_title %><br />
+    <%= f.text_field :enhanced_title %>
+  </p>
+  <p>
+    <%= f.label :enhanced_text %><br />
+    <%= f.text_field :enhanced_text %>
+  </p>
+  <p>
+    <%= f.label :enhanced_link %><br />
+    <%= f.text_field :enhanced_link %>
+  </p>
+  <p>
+    <%= f.label :enhanced_image_src %><br />
+    <%= f.text_field :enhanced_image_src %>
+  </p>
+  <p>
+    <%= f.label :recommended_title %><br />
+    <%= f.text_field :recommended_title %>
+  </p>
+  <p>
+    <%= f.label :recommended_text %><br />
+    <%= f.text_field :recommended_text %>
+  </p>
+  <p>
+    <%= f.label :recommended_link %><br />
+    <%= f.text_field :recommended_link %>
+  </p>
+  <p>
+    <%= f.label :recommended_image_src %><br />
+    <%= f.text_field :recommended_image_src %>
+  </p>
+  <p>
+    <%= f.label :detail_title %><br />
+    <%= f.text_field :detail_title %>
+  </p>
+  <p>
+    <%= f.label :detail_text %><br />
+    <%= f.text_area :detail_text %>
+  </p>
+  <p>
+    <%= f.label :detail_link %><br />
+    <%= f.text_field :detail_link %>
+  </p>
+  <p>
+    <%= f.label :secondary_detail_title %><br />
+    <%= f.text_field :secondary_detail_title %>
+  </p>
+  <p>
+    <%= f.label :secondary_detail_text %><br />
+    <%= f.text_area :secondary_detail_text %>
+  </p>
+  <p>
+    <%= f.label :secondary_detail_link %><br />
+    <%= f.text_field :secondary_detail_link %>
+  </p>
+  <p>
+    <%= f.label :detail_image_src %><br />
+    <%= f.text_field :detail_image_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image2_src %><br />
+    <%= f.text_field :detail_image2_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image3_src %><br />
+    <%= f.text_field :detail_image3_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image4_src %><br />
+    <%= f.text_field :detail_image4_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image4_src %><br />
+    <%= f.text_field :detail_image4_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image5_src %><br />
+    <%= f.text_field :detail_image5_src %>
+  </p>
+  <p>
+    <%= f.label :detail_image6_src %><br />
+    <%= f.text_field :detail_image6_src %>
+  </p>
+  <p>
+    <%= f.label :meta_title %><br />
+    <%= f.text_field :meta_title %>
+  </p>
+  <p>
+    <%= f.label :meta_description %><br />
+    <%= f.text_field :meta_description %>
+  </p>
+  <p>
+    <%= f.label :meta_keywords %><br />
+    <%= f.text_field :meta_keywords %>
+  </p>
+  <p>
+    <%= f.label :other_metas %><br />
+    <%= f.text_field :other_metas %>
+  </p>
+  <p>
+    <%= f.label :sales_quantity %><br />
+    <%= f.text_field :sales_quantity %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>

@@ -1,0 +1,183 @@
+
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-04-22 12:14:27) [GET]
+Rendering home/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/home/index]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-04-22 12:16:16) [GET]
+Rendering home/index
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/home/index]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-04-22 12:16:19) [GET]
+Rendering home/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110422131854)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "category_id" integer, "product_type" varchar(255), "code" varchar(255), "name" varchar(255), "enabled" boolean, "visible" boolean, "saleable" boolean, "enhanced" boolean, "new_from" date, "new_to" date, "cost" decimal, "iva" integer, "shipping_cost" decimal, "price" decimal, "special_price" decimal, "special_price_from" date, "special_price_to" date, "width" decimal, "height" decimal, "deep" decimal, "weight" decimal, "warehouse_location" varchar(255), "manage_stock" boolean, "stock_quantity" integer, "stock_availability" boolean, "friendly_url" varchar(255), "meta_title" varchar(255), "meta_description" varchar(255), "meta_keywords" varchar(255), "other_metas" varchar(255), "css_class" varchar(255), "title" varchar(255), "home_order" integer, "home_title" varchar(255), "home_text" varchar(255), "home_link" varchar(255), "home_image_src" varchar(255), "list_order" integer, "list_title" varchar(255), "list_text" varchar(255), "list_link" varchar(255), "list_image_src" varchar(255), "category_order" integer, "category_title" varchar(255), "category_text" varchar(255), "category_link" varchar(255), "category_image_src" varchar(255), "cart_title" varchar(255), "cart_text" varchar(255), "cart_link" varchar(255), "cart_image_src" varchar(255), "enhanced_order" integer, "enhanced_title" varchar(255), "enhanced_text" varchar(255), "enhanced_link" varchar(255), "enhanced_image_src" varchar(255), "recommended_title" varchar(255), "recommended_text" varchar(255), "recommended_link" varchar(255), "recommended_image_src" varchar(255), "detail_title" varchar(255), "detail_text" text, "detail_link" varchar(255), "secondary_detail_title" varchar(255), "secondary_detail_text" text, "secondary_detail_link" varchar(255), "detail_image_src" varchar(255), "detail_image2_src" varchar(255), "detail_image3_src" varchar(255), "detail_image4_src" varchar(255), "detail_image5_src" varchar(255), "detail_image6_src" varchar(255), "sales_quantity" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110422131854')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-04-22 15:27:15) [GET]
+Rendering home/index
+Completed in 47ms (View: 46, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-04-22 15:27:17) [GET]
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 24ms (View: 20, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2011-04-22 15:27:20) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 210ms (View: 199, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2011-04-22 18:52:35) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 153ms (View: 99, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-04-23 12:18:54) [GET]
+Rendering home/index
+Completed in 56ms (View: 55, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-04-23 12:18:56) [GET]
+  [4;36;1mCategory Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: categories: SELECT * FROM "categories" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: categories: SELECT * FROM "categories" ):
+  app/controllers/categories_controller.rb:5:in `index'
+
+Rendered rescues/_trace (99.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110422131854)
+Migrating to CreateCategories (20110423101807)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "super_category_id" integer, "code" varchar(255), "name" varchar(255), "enabled" boolean, "visible" boolean, "enhanced" boolean, "new_from" date, "new_to" date, "friendly_url" varchar(255), "css_class" varchar(255), "title" varchar(255), "home_order" integer, "home_title" varchar(255), "home_text" varchar(255), "home_link" varchar(255), "home_image_src" varchar(255), "list_order" integer, "list_title" varchar(255), "list_text" varchar(255), "list_link" varchar(255), "list_image_src" varchar(255), "category_order" integer, "category_title" varchar(255), "category_text" varchar(255), "category_link" varchar(255), "category_image_src" varchar(255), "enhanced_order" integer, "enhanced_title" varchar(255), "enhanced_text" varchar(255), "enhanced_link" varchar(255), "enhanced_image_src" varchar(255), "recommended_title" varchar(255), "recommended_text" varchar(255), "recommended_link" varchar(255), "recommended_image_src" varchar(255), "detail_title" varchar(255), "detail_text" text, "detail_link" varchar(255), "secondary_detail_title" varchar(255), "secondary_detail_text" text, "secondary_detail_link" varchar(255), "detail_image_src" varchar(255), "meta_title" varchar(255), "meta_description" varchar(255), "meta_keywords" varchar(255), "other_metas" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (31.8ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110423101807')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("products")[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-04-23 12:19:22) [GET]
+  [4;36;1mCategory Load (0.7ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 31ms (View: 27, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2011-04-23 12:19:24) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 195ms (View: 184, DB: 0) | 200 OK [http://localhost/categories/new]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2011-04-23 12:19:42) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 91ms (View: 82, DB: 0) | 200 OK [http://localhost/categories/new]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2011-04-23 13:11:00) [GET]
+  [4;36;1mProduct Load (0.7ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2011-04-23 13:11:01) [GET]
+Rendering template within layouts/products
+Rendering products/new
+Completed in 167ms (View: 155, DB: 0) | 200 OK [http://localhost/products/new]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-04-23 13:11:06) [GET]
+  [4;35;1mCategory Load (0.6ms)[0m   [0mSELECT * FROM "categories" [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 99ms (View: 13, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2011-04-23 13:11:07) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 54ms (View: 45, DB: 0) | 200 OK [http://localhost/categories/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20110422131854)
+Migrating to CreateCategories (20110423101807)
+Migrating to CreateCategoryProductJoinTable (20110423113825)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "categories_products" ("category_id" integer, "product_id" integer) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110423113825')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories_products")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("products")[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-04-23 13:54:48) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 38ms (View: 24, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2011-04-23 13:54:49) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 143ms (View: 132, DB: 0) | 200 OK [http://localhost/categories/new]

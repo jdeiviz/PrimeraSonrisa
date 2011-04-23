@@ -1,0 +1,166 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Product type</th>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Enabled</th>
+    <th>Visible</th>
+    <th>Saleable</th>
+    <th>Cost</th>
+    <th>Price</th>
+    <th>Special price</th>
+    <th>Special price from</th>
+    <th>Special price to</th>
+    <th>Iva</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Deep</th>
+    <th>Weight</th>
+    <th>Enhanced</th>
+    <th>New from</th>
+    <th>New to</th>
+    <th>Warehouse location</th>
+    <th>Manage stock</th>
+    <th>Stock quantity</th>
+    <th>Stock availability</th>
+    <th>Shipping cost</th>
+    <th>Friendly url</th>
+    <th>Css class</th>
+    <th>Title</th>
+    <th>Home order</th>
+    <th>Home title</th>
+    <th>Home text</th>
+    <th>Home link</th>
+    <th>Home image src</th>
+    <th>List order</th>
+    <th>List title</th>
+    <th>List text</th>
+    <th>List link</th>
+    <th>List image src</th>
+    <th>Category order</th>
+    <th>Category title</th>
+    <th>Category text</th>
+    <th>Category link</th>
+    <th>Category image src</th>
+    <th>Cart title</th>
+    <th>Cart text</th>
+    <th>Cart link</th>
+    <th>Cart image src</th>
+    <th>Enhanced order</th>
+    <th>Enhanced title</th>
+    <th>Enhanced text</th>
+    <th>Enhanced link</th>
+    <th>Enhanced image src</th>
+    <th>Recommended title</th>
+    <th>Recommended text</th>
+    <th>Recommended link</th>
+    <th>Recommended image src</th>
+    <th>Detail title</th>
+    <th>Detail text</th>
+    <th>Detail link</th>
+    <th>Secondary detail title</th>
+    <th>Secondary detail text</th>
+    <th>Secondary detail link</th>
+    <th>Detail image src</th>
+    <th>Detail image2 src</th>
+    <th>Detail image3 src</th>
+    <th>Detail image4 src</th>
+    <th>Detail image4 src</th>
+    <th>Detail image5 src</th>
+    <th>Detail image6 src</th>
+    <th>Meta title</th>
+    <th>Meta description</th>
+    <th>Meta keywords</th>
+    <th>Other metas</th>
+    <th>Sales quantity</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%=h product.category_id %></td>
+    <td><%=h product.product_type %></td>
+    <td><%=h product.code %></td>
+    <td><%=h product.name %></td>
+    <td><%=h product.enabled %></td>
+    <td><%=h product.visible %></td>
+    <td><%=h product.saleable %></td>
+    <td><%=h product.cost %></td>
+    <td><%=h product.price %></td>
+    <td><%=h product.special_price %></td>
+    <td><%=h product.special_price_from %></td>
+    <td><%=h product.special_price_to %></td>
+    <td><%=h product.iva %></td>
+    <td><%=h product.width %></td>
+    <td><%=h product.height %></td>
+    <td><%=h product.deep %></td>
+    <td><%=h product.weight %></td>
+    <td><%=h product.enhanced %></td>
+    <td><%=h product.new_from %></td>
+    <td><%=h product.new_to %></td>
+    <td><%=h product.warehouse_location %></td>
+    <td><%=h product.manage_stock %></td>
+    <td><%=h product.stock_quantity %></td>
+    <td><%=h product.stock_availability %></td>
+    <td><%=h product.shipping_cost %></td>
+    <td><%=h product.friendly_url %></td>
+    <td><%=h product.css_class %></td>
+    <td><%=h product.title %></td>
+    <td><%=h product.home_order %></td>
+    <td><%=h product.home_title %></td>
+    <td><%=h product.home_text %></td>
+    <td><%=h product.home_link %></td>
+    <td><%=h product.home_image_src %></td>
+    <td><%=h product.list_order %></td>
+    <td><%=h product.list_title %></td>
+    <td><%=h product.list_text %></td>
+    <td><%=h product.list_link %></td>
+    <td><%=h product.list_image_src %></td>
+    <td><%=h product.category_order %></td>
+    <td><%=h product.category_title %></td>
+    <td><%=h product.category_text %></td>
+    <td><%=h product.category_link %></td>
+    <td><%=h product.category_image_src %></td>
+    <td><%=h product.cart_title %></td>
+    <td><%=h product.cart_text %></td>
+    <td><%=h product.cart_link %></td>
+    <td><%=h product.cart_image_src %></td>
+    <td><%=h product.enhanced_order %></td>
+    <td><%=h product.enhanced_title %></td>
+    <td><%=h product.enhanced_text %></td>
+    <td><%=h product.enhanced_link %></td>
+    <td><%=h product.enhanced_image_src %></td>
+    <td><%=h product.recommended_title %></td>
+    <td><%=h product.recommended_text %></td>
+    <td><%=h product.recommended_link %></td>
+    <td><%=h product.recommended_image_src %></td>
+    <td><%=h product.detail_title %></td>
+    <td><%=h product.detail_text %></td>
+    <td><%=h product.detail_link %></td>
+    <td><%=h product.secondary_detail_title %></td>
+    <td><%=h product.secondary_detail_text %></td>
+    <td><%=h product.secondary_detail_link %></td>
+    <td><%=h product.detail_image_src %></td>
+    <td><%=h product.detail_image2_src %></td>
+    <td><%=h product.detail_image3_src %></td>
+    <td><%=h product.detail_image4_src %></td>
+    <td><%=h product.detail_image4_src %></td>
+    <td><%=h product.detail_image5_src %></td>
+    <td><%=h product.detail_image6_src %></td>
+    <td><%=h product.meta_title %></td>
+    <td><%=h product.meta_description %></td>
+    <td><%=h product.meta_keywords %></td>
+    <td><%=h product.other_metas %></td>
+    <td><%=h product.sales_quantity %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New product', new_product_path %>
